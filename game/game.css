@@ -17,3 +17,6 @@ transition: border-color 0.25s; }
 .display:focus {
 	border-color:  #8739F9;
 }
+#hi{
+	width: 300px;
+}

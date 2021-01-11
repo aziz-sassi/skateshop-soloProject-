@@ -17,34 +17,24 @@
 		</div>
 		<div class="showen">
 			<center><h3>guess the number</h3></center>
+			<center><p><b>lifes:</b><span id="score">5</span></p></center>
 			<center>
-				<input class="display">
-				<table class="inp">
-		
-		<tr>
-			<td><input type="button" value="7"  onclick="insrt(7)"></td>
-			<td><input type="button" value="8"  onclick="insrt(8)"></td>
-			<td><input type="button" value="9"  onclick="insrt(9)"></td>
-			
-	    </tr>
-			<tr>
-			<td><input type="button" value="4"  onclick="insrt(4)"></td>
-			<td><input type="button" value="5"  onclick="insrt(5)"></td>
-			<td><input type="button" value="6"  onclick="insrt(6)"></td>
-		</tr>
-		
-		<tr>
-			<td><input type="button" value="1" onclick="insrt(1)" ></td>
-			<td><input type="button" value="2"  onclick="insrt(2)"></td>
-			<td><input type="button" value="3"  onclick="insrt(3)"></td>
-			
-	    </tr>
-	    
-	</table>
-	</center>
+				
+				<input type="text" id="playersGuess" placeholder="Input Number 1-10" class="form-control input" >
+<h3 id="status"></h3>
+<button onclick='random()' type="button" id="playersGuess"class="btn btn-lg btn-info submit">Submit Your Guess</button>
+
+
+
+
 		</div>
-		
-	</div>
+		</div>
+	<div class="showwin">
+			<center><h1>congrats you won this amazing board </h1>
+				<img id='hi'src="win.jpg"></center>
+			
+		</div>
+		<div class="showlose"><center><h1>sorry but you're out of lifes :(</h1></center></div>
 <script type="text/javascript" src="game.js"></script>
 </body>
 </html>
