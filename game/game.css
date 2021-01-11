@@ -1,0 +1,19 @@
+body{background: linear-gradient(to right,#9c27b0,#8ecdff);}
+button{
+ 	outline: none;
+	cursor: pointer;
+	width: 100%;
+	padding: 10px 0;
+	font-size: 17px;
+	font-weight: 500;
+	border-radius: 3px;
+	border : 2px solid #ff7979;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+
+}
+.display{ border-color: #CFC8D8;
+transition: border-color 0.25s; }
+.display:focus {
+	border-color:  #8739F9;
+}

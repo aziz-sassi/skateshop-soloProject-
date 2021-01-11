@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aziz skateshop</title>
+	<link rel="stylesheet"  href="style.css">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class ="main">
+
+		<nav>
+			<div>
+			<h1 id="title">we sell the best skateboards</h1>
+				
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="C:\Users\Aziz\Desktop\skateshop-soloProject-\secondpage\secondPage.html" target="blank">boards</a></li>
+					<li><a href="C:\Users\Aziz\Desktop\skateshop-soloProject-\wheels\wheels.html" target="blank">wheels</a></li>
+					<li><a href="https://communityboardshop.com/" target="blank">play our game</a></li>
+					<li><a href="https://www.wikihow.com/Skateboard" target="blank">how to skate </a></li>
+					<li><a href="https://www.britannica.com/sports/skateboarding" target="blank">about us</a></li>
+				</ul>
+			</div>
+		</nav>
+	<div class="infos">
+		
+		
+		<div class="overlay"></div>
+		<div id="circle">
+			<div class="feature one">
+				<img src="images src\icon1.svg" alt="alt icon">
+				<h1>high quality skateboards</h1>
+				<p>8.38" / Steep Concave </p>
+			</div>
+			<div class="feature two">
+				<img src="images src\wheel.png" alt="alt icon">
+				<h1>high quality wheels</h1>
+				<p>classic street style wheel shape.</p>
+			</div>
+			<div class="feature three"><img src="images src\person-male.png" alt="alt icon">
+				<h1>be one of our skaters</h1>
+				<p> be a Sponsored Skater</p>
+			</div>
+			<div class="feature four"><img src="images src\msg.png" alt="alt icon">
+				<h1>talk to other skaters</h1>
+				<p>join the community</p>
+			</div>
+		</div>
+	</div>
+	<div class="control">
+		<img src="images src\unnamed.gif" id="up"  >
+		<h3>features</h3>
+		<img src="images src\unnamed.gif" id="down">
+	</div>
+	</div>
+	<script>
+		var circle = document.getElementById('circle')
+		var up = document.getElementById('up')
+		var down = document.getElementById('down')
+		var rotateValue = circle.style.transform;
+		var rotateSum;
+		up.onclick = function () {
+			rotateSum = rotateValue + "rotate(-90deg)";
+			circle.style.transform= rotateSum;
+			rotateValue= rotateSum;
+		}
+		down.onclick= function () {
+		rotateSum=rotateValue+"rotate(90deg)";
+		circle.style.transform=rotateSum;
+		rotateValue=rotateSum
+		}
+	</script>
+
+</body>
+</html>
