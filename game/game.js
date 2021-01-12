@@ -3,6 +3,7 @@ var lifess = 5;
 $('.showwin').hide();
 $('.showen').hide();
 $('.showlose').hide();
+$('.si').hide();
 
 $('#hider').on('click', function (){
 	$('.hiden').hide(1000);
@@ -29,14 +30,28 @@ function random(){
     playersGuess = parseInt($('#playersGuess').val());
     if (winningNumber===playersGuess) {
     	$('.main').hide();
-    	$('.showwin').show(1000)
+    	$('.showwin').show(1000);
+    	
+
+
+
     }
    else if (lifess<=0) {
    	$('.main').hide();
    	$('.showlose').show(1000)
 
    }
+   else if (winningNumber!==playersGuess) {
+   	alert("you lose try again")
+   }
 }
+$('#winbtn').on('click', function (){
+	$('.si').show(1000);
+	$('#winbtn').hide();
+})
+$('#winbtnn').on('click', function (){ 
+ alert('received successfully')})
+
 
 
 

@@ -1,4 +1,5 @@
 let count = 0;
+$('.si').hide();
 //if add to cart btn clicked
 $('#cart_btn1').on('click', function (){
  count = count + 1;
@@ -30,4 +31,8 @@ $('.cart-nav').on('click', function (){
 
 })
 $('.buy').on('click', function (){
- window.prompt("confirm your username");});
+$('.si').show(1000);
+
+});
+$('#winbtnn').on('click', function (){
+	alert('enjoy your product!')})
